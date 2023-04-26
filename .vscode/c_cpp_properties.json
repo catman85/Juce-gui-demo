@@ -12,8 +12,8 @@
 				"/usr/local/include",
 				"/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed",
 				"${workspaceFolder}/**",
-				"/home/jim/JUCE/",
-				"/home/jim/JUCE/modules/"
+				"~/JUCE/",
+				"~/JUCE/modules/"
 			],
 			"browse": {
 				"limitSymbolsToIncludedHeaders": true,
@@ -22,8 +22,8 @@
 					"/usr/include",
 					"/usr/local/include",
 					"${workspaceFolder}/**",
-					"/home/jim/JUCE/",
-					"/home/jim/JUCE/modules/"
+					"~/JUCE/",
+					"~/JUCE/modules/"
 					
 				]
 			},
