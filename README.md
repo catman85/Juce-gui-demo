@@ -6,38 +6,45 @@
 - debugging
 - .vscode automations
 
-## Linux guide for creating projects like this
+## Setup guide
 ### Juce and Projucer 
 1. Downkoad the JUCE framework and Projucer from https://juce.com/download/
 1. Move the JUCE folder to your home directory ~
-1. Execure the Projucer executable located in ~/JUCE/Projucer
+1. Execute the Projucer executable located in ~/JUCE/Projucer
 1. File > Sign In > select enable gpl mode
 1. Make sure the File > Global Paths are ok. (They should point to your ~/JUCE/ directory). Check for 
     1. Path to JUCE 
-    2. JUCE modules
-1. Create a new project from Projucer, give it a name, make sure the Linux-Makefile is checked, in the Exporters section
+    1. JUCE modules
+1. Create a new project from Projucer, give it a name, make sure the Linux-Makefile is checked, Xcode (macOS) in the Exporters section, 
+1. Or open an existing one. like this repo. (Open the .jucer file)
 
-### Manual build
+### Linux Manual build
 1. Go to your project foler and `Builds/LinuxMakeFile`. Run `make CONFIG=Debug` to make sure you can build the file, and not missing any dependencies.
 1. Execute the executable located in `Builds/LinuxMakefile/build/DemoApp` or check that your vst is created, depending on the options you set in Projucer
+1. `sudo pacman -S gdb` for the debugger to work
+
+### Mac build
+Open and run the app once from xcode to generate some files that are necessary for the build task to run.
 
 ### Code-Oss
 1. Install the C/C++ IntelliSense extension for code-oss
-1. `sudo pacman -S gdb` for the debugger to work
 
-### `c_cpp_properties.json`
+### `c_cpp_properties.json` (Linux)
 1. update the usr/include/c++/x.x.x versions to match the ones installed in your system
 1. update the usr/lib/gcc/ versions to match the ones installted in your system
-1. Make sure the JUCE and JUCE/modules paths are correct
+1. Make sure the JUCE/modules paths are correct
 
-### `launch.json`
-1. make sure the `linux.program` path specified, matches the one that occurs by manually building the app with the make command
+### `tasks.json` (Mac)
+Make sure the paths are correct
+
+### `launch.json` (Mac)
+1. make sure the `osx.program` path specified, is correct
 
 ### Running the app
-1. Click `ctrl+shift+b` to open the tasks menu in vscode
+- Click `ctrl+shift+b` to open the tasks menu in vscode
     1. clean all
     1. build
-1. Go to the run menu in the left side menu and select C++ Launch (The debugger should work by putting a breakpoint in vscode editor)
+- Go to the run menu in the left side menu and select C++ Launch (The debugger should work by putting a breakpoint in vscode editor)
 
 ## Resources
 - https://stackoverflow.com/questions/46258143/visual-studio-code-how-to-configure-includepath-for-better-intellisense-results

@@ -1,3 +1,5 @@
-# handled by Projucer
+# handled by Projucer, and xcode
 /Builds
 /JuceLibraryCode
+
+/.vscode/settings.json
