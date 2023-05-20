@@ -31,6 +31,19 @@
 			"compilerPath": "/usr/bin/gcc",
 			"cStandard": "c11",
 			"cppStandard": "c++17"
+		},
+		{	// todo clean linux include paths based on this
+			"name": "Mac",
+            "intelliSenseMode": "macos-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/JuceLibraryCode",
+                "~/JUCE/modules"
+            ],
+            "forcedInclude": [
+                "${workspaceFolder}/JuceLibraryCode/JucePluginDefines.h"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
 		}
 	],
 	"version": 4
