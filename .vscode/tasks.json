@@ -91,7 +91,7 @@
                 "reveal": "always",
                 "panel": "shared"
             },
-            "liunx":{
+            "linux": {
                 "command": "cd ${workspaceRoot}/Builds/LinuxMakefile/ && make clean",
             },
             "osx": {
