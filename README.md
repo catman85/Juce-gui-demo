@@ -43,4 +43,5 @@
 - https://www.reddit.com/r/JUCE/comments/bbrjsb/how_to_run_juce_project_on_linux/
 - https://stackoverflow.com/questions/46258143/visual-studio-code-how-to-configure-includepath-for-better-intellisense-results
 - https://github.com/icq4ever/emptyJUCEProject
+- https://github.com/ChristopherJohnston/HelloWorldPlugin
 
