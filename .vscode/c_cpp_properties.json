@@ -3,16 +3,10 @@
 		{
 			"name": "Linux",
 			"includePath": [
-				"/usr/include",
-				"/usr/local/include",
 				"/usr/include/c++/12.2.1",
-				"/usr/include/c++/12.2.1/backward",
 				"/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include",
 				"/usr/lib/glib-2.0/include",
-				"/usr/local/include",
-				"/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed",
 				"${workspaceFolder}/**",
-				"~/JUCE/",
 				"~/JUCE/modules/"
 			],
 			"browse": {
@@ -24,11 +18,23 @@
 					"${workspaceFolder}/**",
 					"~/JUCE/",
 					"~/JUCE/modules/"
-					
 				]
 			},
 			"intelliSenseMode": "clang-x64",
 			"compilerPath": "/usr/bin/gcc",
+			"cStandard": "c11",
+			"cppStandard": "c++17"
+		},
+		{
+			"name": "Mac",
+			"intelliSenseMode": "macos-gcc-x64",
+			"includePath": [
+				"${workspaceFolder}/JuceLibraryCode",
+				"~/JUCE/modules"
+			],
+			"forcedInclude": [
+				"${workspaceFolder}/JuceLibraryCode/JucePluginDefines.h"
+			],
 			"cStandard": "c11",
 			"cppStandard": "c++17"
 		}
